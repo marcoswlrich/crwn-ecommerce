@@ -1,7 +1,11 @@
 import { Fragment } from "react";
+import SearchIcon from "@mui/icons-material/Search";
+import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorderOutlined";
+//import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { Link } from "react-router-dom";
-// import { ReactCom } from "../../assets/crown.svg";
 import { ReactComponent as CrwLogo } from "../../assets/crown.svg";
+import "./navbar.scss";
 
 const Navbar = () => {
   return (
@@ -15,7 +19,7 @@ const Navbar = () => {
           </div>
           <div className="center">
             <Link className="link" to="/">
-              CRW
+              CRWN
             </Link>
           </div>
           <div className="right">
@@ -44,7 +48,11 @@ const Navbar = () => {
                 Home
               </Link>
             </div>
-            <div className="icons"></div>
+            <div className="icons">
+              <SearchIcon />
+              <PersonOutlineIcon />
+              <FavoriteBorderIcon />
+            </div>
           </div>
         </div>
       </div>
